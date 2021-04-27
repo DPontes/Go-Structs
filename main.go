@@ -11,10 +11,10 @@ type person struct {
 
 func main() {
   /*
-   The order of values inside {} corresponds to the order of variables in the struct.
-   This is not the best way to assign values to a struct, as the order of the variables
-   declaration inside the struct can be changes at some point
+    By specifically defining the variable name in the struct value assignment below,
+    we guarantee that the value will be assigned to the desired varaible in the struct,
+    regardless of the order of the variables inside the struct
   */
-  alex := person{"Alex", "Anderson"}
-
+  alex := person{firstName: "Alex", lastName: "Anderson"}
+  fmt.Println(alex)
 }
