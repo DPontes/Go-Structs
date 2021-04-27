@@ -11,10 +11,14 @@ type person struct {
 
 func main() {
   /*
-    By specifically defining the variable name in the struct value assignment below,
-    we guarantee that the value will be assigned to the desired varaible in the struct,
-    regardless of the order of the variables inside the struct
+    when declaring an empty variable, Golang assign a zero-value to each of the fields in the struct
+    In the case of strings, the 'zero-value' is an empty string ""
   */
-  alex := person{firstName: "Alex", lastName: "Anderson"}
+  var alex person
+
+  alex.firstName = "Alex"
+  alex.lastName = "Andersson"
+
   fmt.Println(alex)
+  fmt.Printf("%+v", alex)   // prints out the names of the variables in the struct 'alex' of type 'person'
 }
