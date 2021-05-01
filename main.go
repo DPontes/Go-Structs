@@ -15,6 +15,10 @@ type person struct {
   contactInfo       // declaring this way is the same as declaring "contactInfo contactInfo"
 }
 
+func (p person) print() {
+  fmt.Printf("%+v", p)
+}
+
 func main() {
   jim := person {
     firstName: "Jim",
@@ -25,5 +29,5 @@ func main() {
     },
   }
 
-  fmt.Printf("%+v", jim)
+  jim.print()
 }
