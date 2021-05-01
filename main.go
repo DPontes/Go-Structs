@@ -4,21 +4,26 @@ import (
     "fmt"
 )
 
+type contactInfo struct {
+  email   string
+  zipCode int
+}
+
 type person struct {
   firstName string
-  lastName string
+  lastName  string
+  contact   contactInfo
 }
 
 func main() {
-  /*
-    when declaring an empty variable, Golang assign a zero-value to each of the fields in the struct
-    In the case of strings, the 'zero-value' is an empty string ""
-  */
-  var alex person
+  jim := person {
+    firstName: "Jim",
+    lastName: "Party",
+    contact: contactInfo {
+      email: "jim@gmail.com",
+      zipCode: 94000,
+    },
+  }
 
-  alex.firstName = "Alex"
-  alex.lastName = "Andersson"
-
-  fmt.Println(alex)
-  fmt.Printf("%+v", alex)   // prints out the names of the variables in the struct 'alex' of type 'person'
+  fmt.Printf("%+v", jim)
 }
