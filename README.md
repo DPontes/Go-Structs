@@ -1,6 +1,6 @@
 # Structs Exercise in Golang
 
-The code is for the Go-Structs project, first project from the Udemy course [Go: The Complete Developer's Guide](https://www.udemy.com/course/go-the-complete-developers-guide/)
+The code is for the Go-Structs project from the Udemy course [Go: The Complete Developer's Guide](https://www.udemy.com/course/go-the-complete-developers-guide/)
 
 ## Output
 
