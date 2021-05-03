@@ -32,7 +32,10 @@ func main() {
       zipCode: 94000,
     },
   }
-
-  jim.updateName("Jimbo")   // Golang allows the calling of receiver functions with either a pointer or with the root type (in this case, type `person`
+  /* Golang allows the calling of receiver functions with either a pointer or with the root type
+     (in this case, type `person`)
+     However, it is mandatory that the receiver type is of type pointer (pointerToPerson *person)
+  */
+  jim.updateName("Jimbo")
   jim.print()
 }
