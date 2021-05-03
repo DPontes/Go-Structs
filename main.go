@@ -33,7 +33,6 @@ func main() {
     },
   }
 
-  jimPointer := &jim
-  jimPointer.updateName("Jimbo")
+  jim.updateName("Jimbo")   // Golang allows the calling of receiver functions with either a pointer or with the root type (in this case, type `person`
   jim.print()
 }
