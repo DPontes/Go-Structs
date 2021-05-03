@@ -20,8 +20,8 @@ The application returns a string containing a struct with contact fields:
 
 ```bash
   go build main.go deck.go
-    ./main
-    ```
+  ./main
+```
 
 ### Test
 
