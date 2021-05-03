@@ -16,10 +16,10 @@ The application returns a string containing a struct with contact fields:
 
 ## How-To
 
-### Run the Application
+### Build and Run the Application
 
 ```bash
-  go build main.go deck.go
+  go build main.go
   ./main
 ```
 
